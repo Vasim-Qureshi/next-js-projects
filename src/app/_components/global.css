@@ -1,0 +1,25 @@
+.input-wrapper{
+    margin: 10px;
+    }
+    .input-field{
+      width: 200px;
+      height: 30px; 
+    }
+    .button{
+      width: 200px;
+      height: 20px;
+    }
+    .container{
+      text-align: center;
+    }
+    .button-link{
+      border-width:2px ;
+      border-color: red;
+      border-radius: 20px;
+      cursor: pointer;
+      background-color: silver;
+      color: black;
+      margin: 0px;
+      padding-bottom: 20px;
+    }
+    

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState } from "react"
 
 const RestaurantLogin = () => {
     const [email,setEmail]=useState();
@@ -19,11 +19,9 @@ const RestaurantLogin = () => {
         response = await response.json();
         if(response.success){
             alert("Login successful")
-        }
-
-       
+        }    
     }
-
+    
     return <>
         <h3>Login</h3>
         <div>
