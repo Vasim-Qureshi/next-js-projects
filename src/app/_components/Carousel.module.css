@@ -1,0 +1,42 @@
+/* components/Carousel.module.css */
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .imageContainer {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .image {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .button:focus {
+    outline: none;
+  }
+  
+  .button:nth-of-type(1) {
+    left: 10px;
+  }
+  
+  .button:nth-of-type(2) {
+    right: 10px;
+  }

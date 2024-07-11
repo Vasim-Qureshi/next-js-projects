@@ -1,8 +1,8 @@
 'use client'
-import Link from 'next/link'
+import Link from 'next/link';
 import { usePathname,useRouter } from 'next/navigation';
-
 import { useEffect, useState } from 'react';
+
 const RestaurantHeader=()=>{
     const [details,setDetails]=useState();
     const pathName=usePathname();
@@ -41,10 +41,10 @@ const RestaurantHeader=()=>{
                 {
                     details && details.name?
                     <> 
-                    <Link href="/">Profile</Link>
+                    <Link href="/restaurant/dashboard">Profile</Link>
                     <button onClick={logout}>Logout</button>
                     </>
-                    :<Link href="/">Login/SignUp</Link>
+                    :<Link href="/restaurant">Login/SignUp</Link>
 
                 }
                 

@@ -1,0 +1,62 @@
+/* components/SideMenu.module.css */
+.hamburger {
+  font-size: 24px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  z-index: 1001;
+}
+
+.sideMenu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sideMenu.open {
+  width: 250px;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-size: 36px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: #818181;
+}
+
+.sideMenu nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sideMenu nav ul li {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sideMenu nav ul li:hover {
+  color: #f1f1f1;
+}
+
+.sideMenu nav ul li a {
+  color: inherit;
+  text-decoration: none;
+}
