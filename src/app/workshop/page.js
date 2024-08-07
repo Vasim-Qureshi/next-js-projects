@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import SparePartsForm from '../_components/SparePartsForm';
 import PartsTable from '../_components/PartsTable';
+import VehicleInfoForm from '../_components/vehicleinfoform';
 
 const WorkshopDashboard = () => {
   const [selectedTable, setSelectedTable] = useState(null);
@@ -77,6 +78,7 @@ const WorkshopDashboard = () => {
       <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-center space-y-8">
         <SparePartsForm />
         <PartsTable />
+        <VehicleInfoForm/>
 
       </div>
     </div>

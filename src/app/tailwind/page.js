@@ -21,6 +21,7 @@ export default function tailwind (){
     return (
         <>
         <AmazonHeader/>
+        <AmazonHeader/>
         <p className="bg-black text-white font-bold">className = "bg-red-100 text-2x font-bold border border-blue-400" </p>
         <div className="bg-red-100 text-2x font-bold border border-blue-400 ">
             <button className="text-blue-500">Header Bar</button>
