@@ -26,7 +26,7 @@ const Home = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const res = await axios.get('api/products');
+        const res = await axios.get('api/parts/autoparts');
         setProducts(res.data.data);
       } catch (error) {
         console.error('Error fetching products:', error);
@@ -50,12 +50,10 @@ const Home = () => {
                   .filter((product) => product.category === category)
                   .map((product) => (
                     <Link href={`/products/${product.id}`} key={product.id}>
-                      <a className="bg-white p-4 rounded shadow-md hover:shadow-lg transition-shadow">
                         <img src={product.image} alt={product.name} className="w-full h-40 object-cover mb-2" />
                         <h3 className="text-xl font-bold">{product.name}</h3>
                         <p className="text-gray-700">{product.description}</p>
                         <p className="text-blue-600 font-bold">${product.price}</p>
-                      </a>
                     </Link>
                   ))}
               </div>
