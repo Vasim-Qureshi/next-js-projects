@@ -12,7 +12,7 @@ const SeedForm = () => {
     setSuccess(null);
 
     try {
-      await axios.post('/api/products/seed');
+      await axios.post('/api/parts/seed');
       setSuccess('Products seeded successfully!');
     } catch (err) {
       setError('Failed to seed products.');
