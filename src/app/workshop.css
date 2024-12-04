@@ -1,0 +1,37 @@
+/* sidenav.css */
+
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #f4f4f4;
+    padding-top: 20px;
+  }
+  
+  .sidenav h2 {
+    margin-left: 10px;
+  }
+  
+  .sidenav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidenav li {
+    margin-bottom: 10px;
+  }
+  
+  .sidenav button {
+    width: 150px;
+    padding: 10px;
+    border: none;
+    background-color: #ddd;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .sidenav button:hover {
+    background-color: #ccc;
+  }
